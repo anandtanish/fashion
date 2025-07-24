@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Brand - Billing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Billing Information</h1>
+
+        <form class="space-y-6">
+            <div>
+                <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <div>
+                <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Shipping Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="123 Main St, Anytown, USA" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+            </div>
+            <div>
+                <label for="cardNumber" class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="expiryDate" class="block text-sm font-medium text-gray-700 mb-1">Expiry Date</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                </div>
+                <div>
+                    <label for="cvv" class="block text-sm font-medium text-gray-700 mb-1">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                </div>
+            </div>
+
+            <a href="thankyou.html" class="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 w-full">
+                Place Order
+            </a>
+        </form>
+    </div>
+</body>
+</html>
+
